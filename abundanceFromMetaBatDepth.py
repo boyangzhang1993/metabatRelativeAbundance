@@ -71,9 +71,9 @@ if __name__ == "__main__":
             
     def lineToAbundance(line, dictKmerToBin):
         if line.split("\t")[0] not in dictKmerToBin:
-            print("Cannot find bin for " + line.split("\t")[0])
+            #print("Cannot find bin for " + line.split("\t")[0])
             return False, [], None, 0
-        
+        print("find bin for " + line.split("\t")[0])
         linesplited = line.split("\t")
         lengthK = float(linesplited[1])
         
