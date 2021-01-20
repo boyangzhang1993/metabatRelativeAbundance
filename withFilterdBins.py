@@ -34,6 +34,7 @@ if __name__ == "__main__":
     mypath = str(args.f)
     myDepthPath = str(args.d)
     myBinPath = str(args.b)
+    dfBins = pd.read_csv(myBinPath)
 
     count = 0
     lineMax = 100
