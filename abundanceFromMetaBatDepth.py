@@ -67,7 +67,7 @@ if __name__ == "__main__":
             #print(dictKmerToBin)
             
       
-    print(dictKmerToBin)
+    #print(dictKmerToBin)
             
     def lineToAbundance(line, dictKmerToBin):
         if line.split("\t")[0] not in dictKmerToBin:
@@ -83,7 +83,7 @@ if __name__ == "__main__":
             if i % 2 == 1:
                 #print(i)
                 arrTemp.append(float(linesplited[i]))
-        print(arrTemp)
+        #print(arrTemp)
             
         return True, arrTemp, dictKmerToBin[line.split("\t")[0]], lengthK
     counter = 0
