@@ -135,7 +135,7 @@ if __name__ == "__main__":
     dfNotScaled.index=dictSampleNames
     
     dfScaled = dfNotScaled.div(dfNotScaled.sum(axis=1), axis=0)
-    dfScaled.to_csv("relativeAbundance.csv", index=True)
+    dfScaled.round(5).to_csv("relativeAbundance.csv", index=True)
         # print(line)
         # print(line.split("\t")[1])
         # for col in line.split(" "):
