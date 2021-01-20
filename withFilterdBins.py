@@ -35,6 +35,7 @@ if __name__ == "__main__":
     myDepthPath = str(args.d)
     myBinPath = str(args.b)
     dfBins = pd.read_csv(myBinPath)
+    binNames = [str(binName) for binName in dfBins['bins']]
 
     count = 0
     lineMax = 100
@@ -46,7 +47,7 @@ if __name__ == "__main__":
             #print(entry.name)
             curFaFile = entry.name
             #print()
-            if curFaFile[:-3] not in dfBins["bins"]:
+            if curFaFile[:-3] not in binNames:
                 continue
     
             # Using readline() 
