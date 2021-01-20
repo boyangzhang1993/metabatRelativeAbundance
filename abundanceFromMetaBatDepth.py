@@ -41,7 +41,7 @@ if __name__ == "__main__":
         if entry.name[-2:] == "fa":
             print(entry.name)
             curFaFile = entry.name
-            print()
+            #print()
     
             # Using readline() 
             file1 = open(mypath + curFaFile, 'r') 
@@ -59,7 +59,7 @@ if __name__ == "__main__":
                 # end of file is reached
                 
                 if line[0] == ">":
-                    print("Line{}: {}".format(count, line))
+                    #print("Line{}: {}".format(count, line))
                     dictKmerToBin[line[1:]] = curFaFile
             file1.close()
                     
