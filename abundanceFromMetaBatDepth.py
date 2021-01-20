@@ -92,7 +92,7 @@ if __name__ == "__main__":
     dictBinLength = {}
     dictSampleNames = []
     dictAbund = {}
-    while True and counter < lineMax: 
+    while True: 
         counter += 1
         line = file2.readline()
         if not line: 
