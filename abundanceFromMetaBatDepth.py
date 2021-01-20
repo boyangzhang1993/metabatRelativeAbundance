@@ -112,8 +112,8 @@ if __name__ == "__main__":
             #print(line.split("\t"))
             findedBin, abundArr, bins, lengthOfK = lineToAbundance(line, dictKmerToBin)
             if findedBin:
-                print(abundArr)
-                print(lengthOfK)
+                #print(abundArr)
+                #print(lengthOfK)
                 if bins not in dictBinLength:
                     dictBinLength[bins] = lengthOfK
                 else:
