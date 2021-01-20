@@ -46,6 +46,8 @@ if __name__ == "__main__":
             #print(entry.name)
             curFaFile = entry.name
             #print()
+            if curFaFile[:-3] not in dfBins["bins"]:
+                continue
     
             # Using readline() 
             file1 = open(mypath + curFaFile, 'r') 
@@ -62,7 +64,7 @@ if __name__ == "__main__":
                 # if line is empty 
                 # end of file is reached
                 
-                if line[0] == ">" and line[1:] in dfBins["bins"]:
+                if line[0] == ">":
                     #print("Line{}: {}".format(count, line))
                     dictKmerToBin[line[1:]] = curFaFile
             file1.close()
