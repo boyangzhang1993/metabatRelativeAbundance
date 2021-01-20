@@ -39,7 +39,7 @@ if __name__ == "__main__":
     for entry in entries.iterdir():
         
         if entry.name[-2:] == "fa":
-            print(entry.name)
+            #print(entry.name)
             curFaFile = entry.name
             #print()
     
